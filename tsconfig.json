@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "ES5",
         "module": "CommonJS",
-        "lib": ["ES2020"],
+        "lib": ["ESNext"],
         "outDir": "./tmp/",
         "allowJs": true,
         "checkJs": true,

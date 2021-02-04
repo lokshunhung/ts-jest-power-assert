@@ -3,12 +3,14 @@
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
-        "test": "jest"
+        "test": "jest --config jest.config.js",
+        "integration": "jest --config jest.integration.js"
     },
     "devDependencies": {
         "@types/jest": "26.0.20",
         "@types/node": "14.14.24",
         "babel-preset-power-assert": "3.0.0",
+        "execa": "5.0.0",
         "jest": "26.6.3",
         "power-assert": "1.6.1",
         "ts-jest": "26.5.0",

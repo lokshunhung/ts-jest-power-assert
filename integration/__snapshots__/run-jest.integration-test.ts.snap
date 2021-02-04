@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`runs jest 1`] = `
+Object {
+  "stderr": "FAIL src/add.spec.ts
+  add
+    ✓ 1 + 1 = 2 (__TIME_RELATED_OUTPUT_REMOVED__)
+    ✓ 20 + 10 = 30
+    ✕ 2 + 3 = 4 (__TIME_RELATED_OUTPUT_REMOVED__)
+
+  ● add › 2 + 3 = 4
+
+    assert(received)
+
+    Expected value to be equal to:
+      true
+    Received:
+      false
+
+    Message:
+        # src/add.spec.ts:11
+      
+      assert(add_1.add(a, b) === c)
+             |     |   |  |  |   | 
+             |     |   |  |  |   4 
+             |     5   2  3  false 
+             Object{add:#function#}
+      
+      [number] c
+      => 4
+      [number] add_1.add(a, b)
+      => 5
+
+       9 |         \${2}  | \${3}  | \${4}
+      10 |     \`('$a + $b = $c', ({ a, b, c }) => {
+    > 11 |         assert(add(a, b) === c);
+         |         ^
+      12 |     });
+      13 | });
+      14 |
+
+        
+      at Decorator.Object.<anonymous>.Decorator._callFunc (node_modules/empower-core/lib/decorator.js:114:29)
+      at src/add.spec.ts:11:9
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        __TIME_RELATED_OUTPUT_REMOVED__
+Ran all test suites.",
+  "stdout": "",
+}
+`;
