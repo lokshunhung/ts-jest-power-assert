@@ -9,7 +9,7 @@ function runJest() {
 }
 
 function stripTimestamp(output: string) {
-    return output.replaceAll(/(?<![A-z])\d+(\.\d+)? m?s(?![A-z])/g, '__TIME_RELATED_OUTPUT_REMOVED__');
+    return output.replace(/(?<![A-z])\d+(\.\d+)? m?s(?![A-z])/g, '__TIME_RELATED_OUTPUT_REMOVED__');
 }
 
 test('runs jest', async () => {
