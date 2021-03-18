@@ -7,7 +7,7 @@
         "integration": "jest --config jest.integration.js"
     },
     "devDependencies": {
-        "@types/jest": "26.0.20",
+        "@types/jest": "26.0.21",
         "@types/node": "14.14.35",
         "babel-preset-power-assert": "3.0.0",
         "execa": "5.0.0",
