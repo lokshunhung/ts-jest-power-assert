@@ -13,7 +13,7 @@ function stripTimestamp(output: string) {
 }
 
 function removeTestTimestampPlaceholder(output: string) {
-    return output.replace(/\(__TIME_RELATED_OUTPUT_REMOVED__\)/g, '');
+    return output.replace(/\s*\(__TIME_RELATED_OUTPUT_REMOVED__\)/g, '');
 }
 
 test('runs jest', async () => {
