@@ -12,10 +12,14 @@ function stripTimestamp(output: string) {
     return output.replace(/(?<![A-z])\d+(\.\d+)? m?s(?![A-z])/g, '__TIME_RELATED_OUTPUT_REMOVED__');
 }
 
+function removeTestTimestampPlaceholder(output: string) {
+    return output.replace(/\(__TIME_RELATED_OUTPUT_REMOVED__\)/g, '');
+}
+
 test('runs jest', async () => {
     const { stdout, stderr } = await runJest();
     expect({
-        stdout: stripTimestamp(stdout),
-        stderr: stripTimestamp(stderr),
+        stdout: removeTestTimestampPlaceholder(stripTimestamp(stdout)),
+        stderr: removeTestTimestampPlaceholder(stripTimestamp(stderr)),
     }).toMatchSnapshot();
 });
