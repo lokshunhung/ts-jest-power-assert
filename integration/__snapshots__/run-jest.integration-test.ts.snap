@@ -4,9 +4,9 @@ exports[`runs jest 1`] = `
 Object {
   "stderr": "FAIL src/add.spec.ts
   add
-    ✓ 1 + 1 = 2 (__TIME_RELATED_OUTPUT_REMOVED__)
+    ✓ 1 + 1 = 2
     ✓ 20 + 10 = 30
-    ✕ 2 + 3 = 4 (__TIME_RELATED_OUTPUT_REMOVED__)
+    ✕ 2 + 3 = 4
 
   ● add › 2 + 3 = 4
 
