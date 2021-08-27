@@ -20,15 +20,16 @@ Object {
     Message:
         # src/add.spec.ts:11
       
-      assert(add_1.add(a, b) === c)
-             |     |   |  |  |   | 
-             |     |   |  |  |   4 
-             |     5   2  3  false 
-             Object{add:#function#}
+      assert((0, add_1.add)(a, b) === c)
+             |   |     |    |  |  |   | 
+             |   |     |    |  |  |   4 
+             |   |     |    2  3  false 
+             |   |     #function#       
+             5   Object{add:#function#} 
       
       [number] c
       => 4
-      [number] add_1.add(a, b)
+      [number] (0, add_1.add)(a, b)
       => 5
 
        9 |         \${2}  | \${3}  | \${4}
