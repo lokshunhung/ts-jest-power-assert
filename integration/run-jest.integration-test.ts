@@ -1,4 +1,4 @@
-import execa = require('execa');
+import { execa } from 'execa';
 
 function runJest() {
     jest.setTimeout(15000);
